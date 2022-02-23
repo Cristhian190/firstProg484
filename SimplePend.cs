@@ -31,12 +31,11 @@ namespace Sim
         public void step(double dt)
         {
             rhsFunc(x,f);
-            
-            for(int i=0;i<n;++i)
+            int i;
+            for(i=0;i<n;++i)
             {
                 x[i] = x[i] + f[i] * dt;
             }
-            //Console.WriteLine ($"{f[0].ToString()}   {f[1].ToString()}");
         }
 
         //--------------------------------------------------------------
